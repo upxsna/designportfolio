@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="+UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="-viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upasana's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/922b5072ad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <P>Upasana Vinod</P>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a data-text = "About" href="./index.html#About">About</a></li>
+                    <li><a data-text = "Services" href="./index.html#services">Services</a></li>
+                    <li><a data-text = "Portfolio" href="./index.html#portfolio">Portfolio</a></li>
+                    <li><a data-text = "Contact" href="./index.html#contact">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Everything is designed.<br>Few things are designed well</h1>
+            </div>
+         </div>
+    </div>
+    <!--------------------ABOUT---------------------->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><br>
+                        Hi! I'm Upasana, a UX designer originally from Bangalore, India but now based in Limerick, Ireland. I believe good aesthetics,an eye for detail,
+                        and customer intutivity to be crucial in creating effective interfaces.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Graphic Design</span><br>Creatives for marketing campaigns and social media accounts</li>
+                        <li><span>painting</span><br>Multi-media traditional art including murals</li>
+                        <li><span>Softwares</span><br>Adobe Photoshop<br>Adobe Illustrator<br>Figma<br>Adobe After Effects<br>Premier Pro</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021</span><br>UI design at Amazon</li>
+                        <li><span>2020</span><br>Graphic Design at Oga Fit</li>
+                        <li><span>2019</span><br>Graphic Design at The Hub</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-23</span><br>MSC in Interaction and Experience Design</li>
+                        <li><span>2018-21</span><br></li> BA in Visual Communication</li>
+                        <li><span>2018</span><br>ISC Science from Frank Anthony Public School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Creating effective web layouts with a keen eye for detail and aesthetics</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Illustrations</h2>
+                <p>Creating digital Illustrations for marketing campaigns, music artits and books</p>
+                </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>Creating mindful and effective applications that look as good as they function</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--------------PORTFOLIO---------------------------->
+<div id="portfolio"></div>
+<div class="container">
+    <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/beruru.new.png">
+                <div class="layer">
+                    <h3>Beruru</h3>
+                    <p>UI design for a small scale plant store</p>
+                        <!----<<a href=class="fa-solid fa-link></i>></a>>----->
+                        <a href="work1.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/mariposa.new.png">
+                <div class="layer">
+                    <h3>Mariposa</h3>
+                    <p>Digital illustration of 'mariposa' or lady with a butterfly</p>
+                        <a href="work2.html"><i class="fa-solid fa-link"></i></a>
+            </div>
+            </div>
+            <div class="work">
+            <img src="images/vietnam.new.png">
+            <div class="layer">
+                <h3>vietnam</h3>
+                <p>A renidtion of the official tourism website for Vietnam</p>
+                    <a href="work3.html"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+    </div>       
+</div>
+<!--------contact------->>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <P><i class="fa-sharp fa-solid fa-paper-plane"></i>upxsna@gmail.com</P>
+                    <P><i class="fa-solid fa-phone"></i>+353 899694964</P>
+                    <a href="./UpasanaV Resume.pdf" class="btn btn2">Download CV</a>
+                </div>
+                
+            </div>
+
+    <div class="contact-right"></div>
+</div>
+
+
+<div class="copywright">
+    <P>Copywright 2022 . Upasana Vinod</P>
+</div>
+
+<script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabconetents = document.getElementsByClassName("tab-conetents");
+
+        function opentab(tabname)
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+</script>
+
+</body>
+</html>
